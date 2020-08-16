@@ -1,13 +1,140 @@
-body {
+html,
+body,
+#root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  min-height: 450px;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-width: 375px;
+}
+.quote-box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 2em 1em;
+  box-sizing: border-box;
+}
+.quote-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2em;
+  height: 100%;
+  width: 100%;
+}
+.quote-container {
+  margin-bottom: 4em;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.quote {
+  text-align: center;
+  font-size: 1.5em;
+}
+.author {
+  font-size: 0.9em;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  border: none;
+  color: white;
+  border-radius: 5px 5px;
+  cursor: pointer;
+  height: 60px;
+}
+.btn:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+.btn:focus {
+  outline: none;
+}
+.tweet-quote,
+.fb-quote {
+  text-decoration: none;
+  display: inline-block;
+  width: 60px;
+  margin-right: 1em;
+}
+.fab,
+i {
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.new-quote {
+  font-size: 1.5em;
+  padding: 0 1em;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media only screen and (min-width: 650px) {
+  .quote-box {
+    min-width: 50%;
+    width: auto;
+    max-width: 60%;
+    min-height: 200px;
+    height: initial;
+    max-height: 90%;
+    border-radius: 5px;
+    padding: 1.5em;
+  }
+  .quote-content {
+    padding-bottom: 0;
+  }
+  .author-container {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .author {
+    text-align: right;
+    margin-right: 1.5em;
+  }
+  .btn-container {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .left-btn {
+    margin-left: 1em;
+  }
+  .right-btn {
+    margin-right: 1em;
+  }
+  .btn {
+    height: 2.5em;
+  }
+  .tweet-quote,
+  .fb-quote {
+    width: 2.5em;
+  }
+  .tweet-quote {
+    margin-right: 0.75em;
+  }
+  .fab {
+    font-size: 1.5em;
+  }
+  .new-quote {
+    font-size: 1em;
+  }
 }
