@@ -1,5 +1,5 @@
-# Random Quote Machine
-### Technologies: HTML, CSS, JavaScript, React.js
+# Random Quote Machine (Old Design)
+### Created: Jun 25, 2020 || Status: Complete || Technologies: HTML, CSS, JavaScript, React.js
 
 **Description:** An application that pulls from hand-picked quotes and randomly generates through them. Refactored to React.js.
 
